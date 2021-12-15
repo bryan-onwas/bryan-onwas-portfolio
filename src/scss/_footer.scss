@@ -1,0 +1,29 @@
+@use 'mixins';
+
+.footer {
+  background-color: var(--black);
+  min-height: var(--footer-height);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  position: relative;
+  z-index: 100;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__copyright {
+    text-align: center;
+  }
+
+  @media (max-width: 31.1875rem) {
+    &__next-line {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// Base Partials
+@forward 'reset';
+@forward 'settings';
+@forward 'mixins';
+@forward 'globals';
+@forward 'modals';
+
+// Page Partials
+@forward 'header';
+@forward 'home';
+@forward 'about';
+@forward 'projects';
+@forward 'contact';
+@forward 'footer';

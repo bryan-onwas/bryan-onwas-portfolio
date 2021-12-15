@@ -1,0 +1,64 @@
+@use 'mixins';
+
+.contact {
+  &__title {
+    @include mixins.section-title;
+
+    &::before {
+      content: 'contact';
+    }
+  }
+
+  &__description {
+    @include mixins.section-description;
+    padding: var(--header-height) 0 3rem;
+  }
+
+  &__form-group {
+    margin-bottom: 2.5rem;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--gray);
+      outline: none;
+
+      &:focus {
+        border: 1px solid var(--black);
+      }
+
+      &[placeholder] {
+        font-size: 1rem;
+        font-family: var(--secondary-font);
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+  }
+
+  &__button-group {
+    display: flex;
+    align-items: center;
+
+    & > * + * {
+      margin-left: 2rem;
+    }
+
+    @media (max-width: 31.1875rem) {
+      flex-direction: column;
+
+      & > * + * {
+        margin: 0;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &__button {
+    @include mixins.button;
+  }
+}

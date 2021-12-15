@@ -1,0 +1,75 @@
+// Source (https://css-tricks.com/box-sizing/)
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--primary-font);
+
+  &.disable-scroll {
+    overflow: hidden;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--footer-height));
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  &--modal {
+    max-width: var(--modal-width);
+  }
+}
+
+section {
+  padding: var(--section-gutter) 0 0;
+  position: relative;
+
+  &:first-child {
+    padding: var(--header-height) 0 var(--section-gutter);
+  }
+
+  &:last-child {
+    padding: var(--section-gutter) 0 var(--header-height);
+  }
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  height: auto;
+  width: 100%;
+  aspect-ratio: revert;
+}
+
+.next-line {
+  display: block;
+}
