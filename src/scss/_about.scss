@@ -9,15 +9,19 @@
     position: relative;
   }
 
-  &__name {
+  &__title {
     @include mixins.section-title;
-    padding-bottom: 1.25rem;
     margin-bottom: calc(var(--section-gutter) * 0.5);
 
     &::before {
       content: 'about';
       left: 0.25rem;
     }
+  }
+
+  &__subtitle {
+    @include mixins.section-title;
+    margin-bottom: calc(var(--section-gutter) * 0.5);
   }
 
   &__line {
@@ -91,11 +95,6 @@
     @media (max-width: 35.9375rem) {
       text-align: center;
     }
-  }
-
-  &__title {
-    @include mixins.section-title;
-    margin-bottom: calc(var(--section-gutter) * 0.5);
   }
 
   &__skill-group {

@@ -871,21 +871,20 @@ img {
 .about__info {
   position: relative;
 }
-.about__name {
+.about__title {
   font-size: 2.25rem;
   font-weight: 900;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 1.25rem;
   margin-bottom: calc(var(--section-gutter) * 0.5);
 }
 @media (max-width: 35.9375rem) {
-  .about__name {
+  .about__title {
     font-size: 2rem;
     text-align: center;
   }
 }
-.about__name::before {
+.about__title::before {
   content: "";
   position: absolute;
   font-size: 9rem;
@@ -900,40 +899,99 @@ img {
   line-height: 1;
 }
 @media (max-width: 61.9375rem) {
-  .about__name::before {
+  .about__title::before {
     font-size: 7.5rem;
     top: -2.75rem;
   }
 }
 @media (max-width: 47.9375rem) {
-  .about__name::before {
+  .about__title::before {
     font-size: 6rem;
     top: -2rem;
   }
 }
 @media (max-width: 39.9375rem) {
-  .about__name::before {
+  .about__title::before {
     font-size: 5.25rem;
     top: -1.5rem;
   }
 }
 @media (max-width: 35.9375rem) {
-  .about__name::before {
+  .about__title::before {
     font-size: 4.5rem;
     right: 0;
     top: -1.25rem;
   }
 }
 @media (max-width: 31.1875rem) {
-  .about__name::before {
+  .about__title::before {
     font-size: 3.5rem;
     top: -0.75rem;
     letter-spacing: 0.125rem;
   }
 }
-.about__name::before {
+.about__title::before {
   content: "about";
   left: 0.25rem;
+}
+.about__subtitle {
+  font-size: 2.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: calc(var(--section-gutter) * 0.5);
+}
+@media (max-width: 35.9375rem) {
+  .about__subtitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.about__subtitle::before {
+  content: "";
+  position: absolute;
+  font-size: 9rem;
+  font-weight: 900;
+  color: var(--white);
+  text-transform: uppercase;
+  top: -3.5rem;
+  left: 0;
+  z-index: -1;
+  text-shadow: -1px -1px 0 var(--light), 1px -1px 0 var(--light), -1px 1px 0 var(--light), 1px 1px 0 var(--light);
+  letter-spacing: 0.5rem;
+  line-height: 1;
+}
+@media (max-width: 61.9375rem) {
+  .about__subtitle::before {
+    font-size: 7.5rem;
+    top: -2.75rem;
+  }
+}
+@media (max-width: 47.9375rem) {
+  .about__subtitle::before {
+    font-size: 6rem;
+    top: -2rem;
+  }
+}
+@media (max-width: 39.9375rem) {
+  .about__subtitle::before {
+    font-size: 5.25rem;
+    top: -1.5rem;
+  }
+}
+@media (max-width: 35.9375rem) {
+  .about__subtitle::before {
+    font-size: 4.5rem;
+    right: 0;
+    top: -1.25rem;
+  }
+}
+@media (max-width: 31.1875rem) {
+  .about__subtitle::before {
+    font-size: 3.5rem;
+    top: -0.75rem;
+    letter-spacing: 0.125rem;
+  }
 }
 .about__line {
   margin: 2rem 0;
@@ -1055,65 +1113,6 @@ img {
 @media (max-width: 35.9375rem) {
   .about__card-description {
     text-align: center;
-  }
-}
-.about__title {
-  font-size: 2.25rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  position: relative;
-  margin-bottom: calc(var(--section-gutter) * 0.5);
-}
-@media (max-width: 35.9375rem) {
-  .about__title {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-.about__title::before {
-  content: "";
-  position: absolute;
-  font-size: 9rem;
-  font-weight: 900;
-  color: var(--white);
-  text-transform: uppercase;
-  top: -3.5rem;
-  left: 0;
-  z-index: -1;
-  text-shadow: -1px -1px 0 var(--light), 1px -1px 0 var(--light), -1px 1px 0 var(--light), 1px 1px 0 var(--light);
-  letter-spacing: 0.5rem;
-  line-height: 1;
-}
-@media (max-width: 61.9375rem) {
-  .about__title::before {
-    font-size: 7.5rem;
-    top: -2.75rem;
-  }
-}
-@media (max-width: 47.9375rem) {
-  .about__title::before {
-    font-size: 6rem;
-    top: -2rem;
-  }
-}
-@media (max-width: 39.9375rem) {
-  .about__title::before {
-    font-size: 5.25rem;
-    top: -1.5rem;
-  }
-}
-@media (max-width: 35.9375rem) {
-  .about__title::before {
-    font-size: 4.5rem;
-    right: 0;
-    top: -1.25rem;
-  }
-}
-@media (max-width: 31.1875rem) {
-  .about__title::before {
-    font-size: 3.5rem;
-    top: -0.75rem;
-    letter-spacing: 0.125rem;
   }
 }
 .about__skill-group {
