@@ -20,10 +20,6 @@
     }
   }
 
-  &__role {
-    @include mixins.role;
-  }
-
   &__line {
     @include mixins.line;
   }

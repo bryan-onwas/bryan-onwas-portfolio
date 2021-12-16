@@ -935,19 +935,6 @@ img {
   content: "about";
   left: 0.25rem;
 }
-.about__role {
-  font-family: var(--secondary-font);
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  font-weight: 600;
-  color: var(--dark);
-  letter-spacing: 0.0625rem;
-}
-@media (max-width: 35.9375rem) {
-  .about__role {
-    text-align: center;
-  }
-}
 .about__line {
   margin: 2rem 0;
   height: 0.125rem;
