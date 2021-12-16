@@ -135,7 +135,7 @@ table {
 
 :root {
   --primary-font: "Montserrat", sans-serif;
-  --secondary-font: "Mulish", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
   --tertiary-font: "Open Sans", sans-serif;
   --pro-font: "Sofia Pro", sans-serif;
   --white: #fff;
@@ -836,9 +836,9 @@ img {
 }
 .home__role {
   font-family: var(--secondary-font);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--dark);
   letter-spacing: 0.0625rem;
   margin-bottom: 2rem;
@@ -877,6 +877,7 @@ img {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 1.25rem;
+  margin-bottom: calc(var(--section-gutter) * 0.5);
 }
 @media (max-width: 35.9375rem) {
   .about__name {
@@ -936,9 +937,9 @@ img {
 }
 .about__role {
   font-family: var(--secondary-font);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--dark);
   letter-spacing: 0.0625rem;
 }
@@ -1033,7 +1034,7 @@ img {
 }
 .about__card {
   border: 0.125rem solid var(--light);
-  padding: 1rem;
+  padding: 1.25rem;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
@@ -1048,24 +1049,26 @@ img {
 .about__card-content > * + * {
   margin-left: 2.25rem;
 }
-.about__card-icon i {
-  font-size: 3rem;
-  position: relative;
-}
-.about__card-icon .bi-display,
-.about__card-icon .bi-envelope {
-  top: -0.25rem;
-}
 .about__card-title {
   font-family: var(--secondary-font);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
+}
+@media (max-width: 35.9375rem) {
+  .about__card-title {
+    text-align: center;
+  }
 }
 .about__card-description {
   padding-top: 1.5rem;
   font-family: var(--secondary-font);
   letter-spacing: 0.0625rem;
   color: var(--dark);
+}
+@media (max-width: 35.9375rem) {
+  .about__card-description {
+    text-align: center;
+  }
 }
 .about__title {
   font-size: 2.25rem;
@@ -1179,7 +1182,7 @@ img {
 .about__skill-title {
   font-family: var(--secondary-font);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .projects__title {
@@ -1323,7 +1326,7 @@ img {
 .projects__card-title {
   font-family: var(--secondary-font);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
   padding: 1rem 0 0;
 }
 .projects__card-subtitle {

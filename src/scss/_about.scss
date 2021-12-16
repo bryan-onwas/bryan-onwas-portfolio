@@ -12,6 +12,8 @@
   &__name {
     @include mixins.section-title;
     padding-bottom: 1.25rem;
+    margin-bottom: calc(var(--section-gutter) * 0.5);
+
     &::before {
       content: 'about';
       left: 0.25rem;
@@ -66,7 +68,7 @@
 
   &__card {
     border: 0.125rem solid var(--light);
-    padding: 1rem;
+    padding: 1.25rem;
     flex-basis: 50%;
   }
 
@@ -79,25 +81,20 @@
     }
   }
 
-  &__card-icon {
-    i {
-      font-size: 3rem;
-      position: relative;
-    }
-
-    .bi-display,
-    .bi-envelope {
-      top: -0.25rem;
-    }
-  }
-
   &__card-title {
     @include mixins.card-title;
+
+    @media (max-width: 35.9375rem) {
+      text-align: center;
+    }
   }
 
   &__card-description {
     padding-top: 1.5rem;
     @include mixins.card-description;
+    @media (max-width: 35.9375rem) {
+      text-align: center;
+    }
   }
 
   &__title {

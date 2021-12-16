@@ -34,9 +34,9 @@
 
 @mixin role {
   font-family: var(--secondary-font);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--dark);
   letter-spacing: 0.0625rem;
 
@@ -111,7 +111,7 @@
 @mixin card-title {
   font-family: var(--secondary-font);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 @mixin card-description {
