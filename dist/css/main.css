@@ -674,7 +674,7 @@ img {
 .header__menu {
   font-family: var(--secondary-font);
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (max-width: 47.9375rem) {
   .header__menu {
@@ -1079,7 +1079,7 @@ img {
 }
 .about__card {
   border: 0.125rem solid var(--light);
-  padding: 1.25rem;
+  padding: 2.5rem;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
@@ -1098,6 +1098,7 @@ img {
   font-family: var(--secondary-font);
   font-size: 1.25rem;
   font-weight: 700;
+  font-size: 1.5rem;
 }
 @media (max-width: 35.9375rem) {
   .about__card-title {
@@ -1172,7 +1173,7 @@ img {
 }
 
 .projects {
-  padding: 144px 0 0;
+  padding: 9rem 0 0;
 }
 .projects__title {
   font-size: 2.25rem;
