@@ -1171,12 +1171,14 @@ img {
   font-weight: 700;
 }
 
+.projects {
+  padding: 144px 0 0;
+}
 .projects__title {
   font-size: 2.25rem;
   font-weight: 900;
   text-transform: uppercase;
   position: relative;
-  padding-top: 2.25rem;
 }
 @media (max-width: 35.9375rem) {
   .projects__title {
@@ -1233,7 +1235,6 @@ img {
 .projects__title::before {
   content: "projects";
   left: -0.25rem;
-  padding-top: 2.25rem;
 }
 .projects__card-group {
   padding-top: 8.25rem;
