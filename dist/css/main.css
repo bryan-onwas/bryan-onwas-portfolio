@@ -870,7 +870,7 @@ img {
   font-weight: 900;
   text-transform: uppercase;
   position: relative;
-  margin-top: calc(var(--section-gutter) * 0.5);
+  margin-top: calc(var(--section-gutter));
   margin-bottom: calc(var(--section-gutter) * 0.5);
 }
 @media (max-width: 35.9375rem) {
@@ -923,6 +923,10 @@ img {
     top: -0.75rem;
     letter-spacing: 0.125rem;
   }
+}
+.home__subtitle::before {
+  content: "skills";
+  left: 0.25rem;
 }
 .home__skill-group {
   display: -webkit-box;
