@@ -1,8 +1,6 @@
 :root {
-  --primary-font: 'Montserrat', sans-serif;
-  --secondary-font: 'Poppins', sans-serif;
-  --tertiary-font: 'Open Sans', sans-serif;
-  --pro-font: 'Sofia Pro', sans-serif;
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Open Sans', sans-serif;
 
   --white: #fff;
   --light: #f2f2f2;
@@ -13,6 +11,6 @@
   --container-width: 1400px;
   --modal-width: 960px;
   --header-height: 6rem;
-  --footer-height: 6rem;
+  --footer-height: 8rem;
   --section-gutter: calc(var(--header-height) * 1.5);
 }

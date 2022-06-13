@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
@@ -70,6 +70,56 @@
 
       gtag('config', 'G-10KHM9SCL8');
     </script>
+
+    <!-- Start of Async Drift Code -->
+    <script>
+      'use strict';
+
+      !(function () {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (window.console && console.error && console.error('Drift snippet included twice.'));
+          (t.invoked = !0),
+            (t.methods = [
+              'identify',
+              'config',
+              'track',
+              'reset',
+              'debug',
+              'show',
+              'ping',
+              'page',
+              'hide',
+              'off',
+              'on',
+            ]),
+            (t.factory = function (e) {
+              return function () {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function (e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function (t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement('script');
+              (o.type = 'text/javascript'),
+                (o.async = !0),
+                (o.crossorigin = 'anonymous'),
+                (o.src = 'https://js.driftt.com/include/' + n + '/' + t + '.js');
+              var i = document.getElementsByTagName('script')[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('h8esykpkub3h');
+    </script>
+    <!-- End of Async Drift Code -->
   </head>
 
   <body>
@@ -157,17 +207,15 @@
               <h1 class="about__title">About Me</h1>
               <div class="about__line"></div>
               <p class="about__description">
-                I am a Web Content editor / Email Developer who is very passionate and dedicated to my work.
-              </p>
-              <p class="about__description">
-                With over 6 months of experience as a freelance web and email content editor, I have acquired the skills
-                and knowledge necessary to make your project a success. I enjoy every step of the design process, from
+                I'm an freelance email developer and a web content editor who is very passionate and dedicated to my
+                work. Since the beginning of my journey as a freelance web and email content editor, I have acquired the
+                skills and knowledge necessary to make your project a success. I enjoy every step of the process from
                 discussion and collaboration.
               </p>
               <div class="about__button-group">
                 <a
                   class="about__button"
-                  href="https://docs.google.com/document/d/1YvFltvi31Ylh5os7qmgP5gW6HfD3gv11TDfo2YnJUbM/edit"
+                  href="https://docs.google.com/document/d/1y415Ol78BT3fdAESVTGfZUg739pTI0JChmXb2tg5afk/edit"
                   target="_blank"
                   rel="noreferrer"
                   rel="noopener"
@@ -175,77 +223,6 @@
                   <i class="bi bi-eye"></i>View CV
                 </a>
               </div>
-
-              <!-- Start Projects Section -->
-              <div class="projects" id="projects">
-                <h1 class="projects__title">Projects</h1>
-                <div class="projects__card-group">
-                  <!-- Card 1 -->
-                  <div class="projects__card">
-                    <a href="/project01.html" class="projects__card-image">
-                      <img src="src/img/news_image.png" alt="newsletter_image" />
-                    </a>
-                    <div class="projects__card-title">Project 01: SEI Residences</div>
-                    <div class="projects__card-subtitle">HTML Email</div>
-                  </div>
-
-                  <!-- Card 2 -->
-                  <div class="projects__card">
-                    <a href="/project02.html" class="projects__card-image">
-                      <img src="src/img/promo_image.png" alt="promotion_image" />
-                    </a>
-                    <div class="projects__card-title">Project 02: Promo-IT</div>
-                    <div class="projects__card-subtitle">HTML Email</div>
-                  </div>
-
-                  <!-- Card 3 -->
-                  <div class="projects__card">
-                    <a href="/project03.html" class="projects__card-image">
-                      <img src="src/img/receipt_image.png" alt="receipt_image" />
-                    </a>
-                    <div class="projects__card-title">Project 03: SEI Themes Receipt</div>
-                    <div class="projects__card-subtitle">HTML Email</div>
-                  </div>
-
-                  <!-- Card 4 -->
-                  <div class="projects__card">
-                    <a href="/project04.html" class="projects__card-image">
-                      <img src="src/img/data_image.png" alt="data_image" />
-                    </a>
-                    <div class="projects__card-title">Project 04: Pricing Table</div>
-                    <div class="projects__card-subtitle">HTML Email</div>
-                  </div>
-
-                  <!-- Card 5 -->
-                  <div class="projects__card">
-                    <a href="/project05.html" class="projects__card-image">
-                      <img src="src/img/kombucha_image.png" alt="kombucha_image" />
-                    </a>
-                    <div class="projects__card-title">Project 05: Kombucha-T</div>
-                    <div class="projects__card-subtitle">Website</div>
-                  </div>
-
-                  <!-- Card 6 -->
-                  <div class="projects__card">
-                    <a href="/project06.html" class="projects__card-image">
-                      <img src="src/img/dine_image.png" alt="sei-dine_image" />
-                    </a>
-                    <div class="projects__card-title">Project 06: Sei-Dine</div>
-                    <div class="projects__card-subtitle">Website</div>
-                  </div>
-                </div>
-
-                <!-- View All Works -->
-                <a
-                  class="projects__button"
-                  href="https://github.com/SeikyouP?tab=repositories"
-                  target="_blank"
-                  rel="noreferrer"
-                  rel="noopener"
-                  ><i class="bi bi-eye"></i>View All Works</a
-                >
-              </div>
-              <!-- End Projects Section -->
             </div>
           </div>
 
@@ -388,10 +365,83 @@
       </section>
       <!-- End About Section -->
 
+      <!-- Start Projects Section -->
+      <section class="projects" id="projects">
+        <div class="projects__inner container">
+          <h1 class="projects__title">Projects</h1>
+          <div class="projects__card-group">
+            <!-- Card 1 -->
+            <div class="projects__card">
+              <a href="/project01.html" class="projects__card-image">
+                <img src="src/img/news_image.png" alt="newsletter_image" />
+              </a>
+              <div class="projects__card-title">Project 01: SEI Residences</div>
+              <div class="projects__card-subtitle">HTML Email</div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="projects__card">
+              <a href="/project02.html" class="projects__card-image">
+                <img src="src/img/promo_image.png" alt="promotion_image" />
+              </a>
+              <div class="projects__card-title">Project 02: Promo-IT</div>
+              <div class="projects__card-subtitle">HTML Email</div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="projects__card">
+              <a href="/project03.html" class="projects__card-image">
+                <img src="src/img/receipt_image.png" alt="receipt_image" />
+              </a>
+              <div class="projects__card-title">Project 03: SEI Themes Receipt</div>
+              <div class="projects__card-subtitle">HTML Email</div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="projects__card">
+              <a href="/project04.html" class="projects__card-image">
+                <img src="src/img/data_image.png" alt="data_image" />
+              </a>
+              <div class="projects__card-title">Project 04: Pricing Table</div>
+              <div class="projects__card-subtitle">HTML Email</div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="projects__card">
+              <a href="/project05.html" class="projects__card-image">
+                <img src="src/img/kombucha_image.png" alt="kombucha_image" />
+              </a>
+              <div class="projects__card-title">Project 05: Kombucha-T</div>
+              <div class="projects__card-subtitle">Website</div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="projects__card">
+              <a href="/project06.html" class="projects__card-image">
+                <img src="src/img/dine_image.png" alt="sei-dine_image" />
+              </a>
+              <div class="projects__card-title">Project 06: Sei-Dine</div>
+              <div class="projects__card-subtitle">Website</div>
+            </div>
+          </div>
+
+          <!-- View All Works -->
+          <a
+            class="projects__button"
+            href="https://github.com/SeikyouP?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+            rel="noopener"
+            ><i class="bi bi-eye"></i>View All Works</a
+          >
+        </div>
+      </section>
+      <!-- End Projects Section -->
+
       <!-- Start Contact Section -->
       <section class="contact" id="contact">
         <div class="contact__inner container">
-          <h1 class="contact__title">Get in Touch</h1>
+          <!-- <h1 class="contact__title">Get in Touch</h1>
           <p class="contact__description">Please fill out the form on this section to contact with me.</p>
 
           <form action="https://formsubmit.co/8df488cc63916253e0a329f7c52f4c1e" target="_blank" method="POST">
@@ -420,7 +470,7 @@
               </button>
               <button type="reset" class="contact__button button"><i class="bi bi-x-circle"></i> Reset Form</button>
             </div>
-          </form>
+          </form> -->
         </div>
       </section>
       <!-- End Contact Section -->
@@ -432,7 +482,7 @@
       <div class="footer__inner container">
         <div class="footer__content">
           <p class="footer__copyright">
-            &copy; 2021 Bryan Onwas. <span class="footer__next-line"> All Rights Reserved</span>
+            &copy; 2022 Bryan Onwas. <span class="footer__next-line"> All Rights Reserved</span>
           </p>
         </div>
       </div>
