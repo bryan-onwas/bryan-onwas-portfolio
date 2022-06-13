@@ -44,11 +44,11 @@ section {
   position: relative;
 
   &:first-child {
-    padding: var(--header-height) 0 var(--section-gutter);
+    padding: var(--header-height) 0 0;
   }
 
   &:last-child {
-    padding: var(--section-gutter) 0 var(--header-height);
+    padding: var(--section-gutter) 0 var(--section-gutter);
   }
 }
 
