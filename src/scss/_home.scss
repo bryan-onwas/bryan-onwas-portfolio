@@ -60,7 +60,7 @@
   &__role {
     @include mixins.role;
     margin-bottom: 2rem;
-    padding-left: 0.75rem;
+    padding-left: 0.625rem;
     @media (max-width: 35.9375rem) {
       text-align: left;
       padding-left: 0;
@@ -69,7 +69,7 @@
 
   &__social-list {
     display: flex;
-    padding-left: 0.75rem;
+    padding-left: 0.625rem;
     @media (max-width: 35.9375rem) {
       padding-left: 0;
     }

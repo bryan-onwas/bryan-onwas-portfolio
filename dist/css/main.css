@@ -833,9 +833,9 @@ img {
   font-size: 2rem;
   margin-top: 1rem;
   font-weight: 700;
-  color: var(--dark);
+  color: var(--black);
   margin-bottom: 2rem;
-  padding-left: 0.75rem;
+  padding-left: 0.625rem;
 }
 @media (max-width: 35.9375rem) {
   .home__role {
@@ -852,7 +852,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0.75rem;
+  padding-left: 0.625rem;
 }
 @media (max-width: 35.9375rem) {
   .home__social-list {
@@ -1105,6 +1105,10 @@ img {
     top: -0.75rem;
     letter-spacing: 0.125rem;
   }
+}
+.about__subtitle::before {
+  content: "services";
+  left: 0.25rem;
 }
 .about__line {
   margin: 2rem 0;

@@ -22,6 +22,11 @@
   &__subtitle {
     @include mixins.section-title;
     margin-bottom: calc(var(--section-gutter) * 0.5);
+
+    &::before {
+      content: 'services';
+      left: 0.25rem;
+    }
   }
 
   &__line {
