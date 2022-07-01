@@ -1,10 +1,6 @@
 @use 'mixins';
 
 .about {
-  &__top {
-    margin-bottom: var(--section-gutter);
-  }
-
   &__info {
     position: relative;
   }

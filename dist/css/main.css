@@ -136,6 +136,7 @@ table {
 :root {
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Open Sans", sans-serif;
+  --pro-font: "Sofia Pro" sans-serif;
   --white: #fff;
   --light: #f2f2f2;
   --gray: gray;
@@ -788,7 +789,7 @@ img {
 .home__hero::before {
   content: "";
   position: absolute;
-  width: 75%;
+  width: 100%;
   height: 100%;
   right: 0;
   top: 0;
@@ -806,6 +807,7 @@ img {
   font-weight: 700;
   line-height: 1;
   position: relative;
+  text-align: center;
 }
 @media (max-width: 47.9375rem) {
   .home__first-name, .home__last-name {
@@ -834,30 +836,24 @@ img {
   margin-top: 1rem;
   font-weight: 700;
   color: var(--black);
-  margin-bottom: 2rem;
-  padding-left: 0.625rem;
+  text-align: center;
 }
 @media (max-width: 35.9375rem) {
   .home__role {
     text-align: center;
   }
 }
-@media (max-width: 35.9375rem) {
-  .home__role {
-    text-align: left;
-    padding-left: 0;
-  }
-}
 .home__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0.625rem;
-}
-@media (max-width: 35.9375rem) {
-  .home__social-list {
-    padding-left: 0;
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1.5rem;
 }
 .home__social-list i {
   font-size: 2rem;
@@ -980,13 +976,10 @@ img {
 }
 .home__skill-title {
   font-family: var(--primary-font);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
-.about__top {
-  margin-bottom: var(--section-gutter);
-}
 .about__info {
   position: relative;
 }
@@ -1216,7 +1209,7 @@ img {
 }
 .about__card-title {
   font-family: var(--primary-font);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -1377,7 +1370,7 @@ img {
 }
 .projects__card-title {
   font-family: var(--primary-font);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 1rem 0 0;
 }
